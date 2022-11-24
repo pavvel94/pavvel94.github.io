@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+</head>
+<body>
+    
+
+
+
+
+</body>
+
+
+<script>
+
+const axios = require("axios");
+
+const options = {
+  method: 'GET',
+  url: 'https://aeona3.p.rapidapi.com/',
+  params: {
+    text: 'hello',
+    userId: '12312312312',
+    context: 'poland',
+    context1: 'fifa world cup'
+  },
+  headers: {
+    'X-RapidAPI-Key': '240e35a4cbmsh5e2d58f7feecd82p12dd16jsn97c756ca5ab7',
+    'X-RapidAPI-Host': 'aeona3.p.rapidapi.com'
+  }
+};
+
+axios.request(options).then(function (response) {
+	console.log(response.data);
+}).catch(function (error) {
+	console.error(error);
+});
+
+
+
+
+
+</script>
+</html>
